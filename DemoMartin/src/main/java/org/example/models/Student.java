@@ -22,6 +22,5 @@ public class Student {
     @NonNull
     @ManyToMany
     @JoinTable(name="estudiante_materia", joinColumns = @JoinColumn(name = "student_id"), inverseJoinColumns = @JoinColumn(name="materia_id"))
-
-    private List<Materia> materias;
+    private List<Materia> materia;
 }
